@@ -33,7 +33,7 @@ class Bullet(Entity):
         self.ySpeed = ySpeed
         angle = -math.degrees(math.atan2(ySpeed, xSpeed))
                 
-        self.surf = pygame.image.load("missle.png").convert()
+        self.surf = pygame.image.load("res/missle.png").convert()
         self.surf = pygame.transform.rotate(self.surf, angle)
         self.surf.set_colorkey((255, 255, 255), RLEACCEL)
         self.rect = self.surf.get_rect(center=center)

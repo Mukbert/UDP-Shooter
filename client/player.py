@@ -25,7 +25,7 @@ class Player(Entity):
         self.entity_id = entity_id
         self.controllable = controllable
         
-        self.surf = pygame.image.load("player.png").convert()
+        self.surf = pygame.image.load("res/player.png").convert()
         self.surf.set_colorkey((255, 255, 255), RLEACCEL)
         self.rect = self.surf.get_rect(x=x, y=y)
         #self.rect.x = x
